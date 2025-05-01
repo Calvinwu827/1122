@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>文字填色效果</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial Black, sans-serif;
+      margin-top: 30px;
+    }
+
+    .text {
+      font-size: 60px;
+      font-weight: bold;
+      margin: 20px 0;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gradient1 {
+      background: linear-gradient(to right, red, orange, yellow, green, blue);
+    }
+
+    .gradient2 {
+      background: linear-gradient(to right, red, orange, yellow, green, blue);
+    }
+
+    .gradient3 {
+      background: linear-gradient(to right, red, orange);
+    }
+
+    .image-text {
+      background: url('https://i.ytimg.com/vi/_Bt9UA354uo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBcC2t0ekvdNTDcRaQVnGEDsQY7Zw') no-repeat center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="text gradient1" style="background-color: white;">HAVE A NICE DAY !</div>
+  <div class="text gradient2">HAVE A NICE DAY !</div>
+  <div class="text gradient3" >HAVE A NICE DAY !</div>
+  <div class="text image-text">Honkai:StarRail</div>
+
+</body>
+</html>

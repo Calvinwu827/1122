@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>背景填色文字</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Impact, sans-serif;
+      margin-top: 50px;
+      background-color: white;
+    }
+
+    .text {
+      font-size: 80px;
+      font-weight: bold;
+      background: url('https://nowplay8.com/wp-content/uploads/2024/09/honkaistar-rail-2.5.webp') no-repeat center;
+      background-size: cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    .gradient-fill {
+      background: linear-gradient(to right, red, orange, yellow, green, blue);
+      color: black;
+      padding: 10px;
+      -webkit-text-fill-color: black; /* 使文字本體有色 */
+    }
+    .gradient1 {
+      background: linear-gradient(to right, red, orange, yellow, green, blue);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient {
+      background: linear-gradient(to right, red, orange,);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="text">Honkai:StarRail</div>
+  <div class="text gradient1">HAVE A NICE DAY !</div>
+  <div class="text gradient-fill">HAVE A NICE DAY !</div>
+  <div class="text gradient">HAVE A NICE DAY !</div>
+</body>
+</html>

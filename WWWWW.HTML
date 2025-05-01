@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>空心文字範例</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial Black, sans-serif;
+      margin-top: 50px;
+    }
+
+    .word {
+      font-size: 60px;
+      font-weight: bold;
+      color: transparent; /* 讓文字變透明 */
+      -webkit-text-stroke-width: 2px; /* 設定為較租的字體 */
+    }
+
+    .apple {
+      -webkit-text-stroke: 2px red;
+    }
+
+    .banana {
+      -webkit-text-stroke: 2px green;
+    }
+
+    .orange {
+      -webkit-text-stroke: 2px orange;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="word apple">APPLE</div>
+  <div class="word banana">BANANA</div>
+  <div class="word orange">ORANGE</div>
+
+</body>
+</html>
