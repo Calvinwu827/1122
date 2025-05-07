@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>花卉展示</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: beige;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: aqua;
+      padding: 10px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border: 3px solid aqua;
+      border-radius: 5px;
+    }
+
+    /* === 桌機版 (1250px以上)：每排4個 === */
+    @media (min-width: 1250px) {
+      .card {
+        width: calc(25% - 20px);
+      }
+    }
+
+    /* === 平板版 (500px ~ 1249px)：每排2個 === */
+    @media (min-width: 500px) and (max-width: 1249px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    /* === 手機版 (320px ~ 499px)：每排1個 === */
+    @media (max-width: 499px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="gallery">
+  <div class="card">
+    <h3>百合花</h3>
+    <img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.15752-9/495270122_2278190959250027_2992237531924321447_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=0pkp-PXNZ9sQ7kNvwFrAsYI&_nc_oc=Adk8w_K9ivJx3duj7JWOdCzafssUDHPurQLd3zCi267n68iR7EQputbGd9a1VQ1m9is&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkhh1-2.fna&oh=03_Q7cD2QG3xcFeHHex-ZsSaFpNLEKIGsKnXxSdvFlWnoOo2uh3lA&oe=68425E4D" alt="飛機1">
+  </div>
+  <div class="card">
+    <h3>野薑花</h3>
+    <img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.15752-9/494576830_1226662782136091_2568776006924860140_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=B5Or356_hioQ7kNvwFglepX&_nc_oc=Adk0ABe87sROj7rfbH-huryyQsWUiUCikDnoUYtXcBqV-G6HXTrPGq4TOgvRAivMmEc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkhh1-2.fna&oh=03_Q7cD2QH2PgM1TuETLnuyJWG2pEtwCS3c1ej-BcAiTZ_XWeFONA&oe=68422AC6" alt="飛機2">
+  </div>
+  <div class="card">
+    <h3>水仙花</h3>
+    <img src="https://scontent.fkhh1-2.fna.fbcdn.net/v/t1.15752-9/494338555_1733024057564204_63526580472159675_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=_y1nHNHrvpoQ7kNvwF55G3f&_nc_oc=AdmN9r-NFN6_CqPtSE9ae-5IsYfBbVm_xh7KZi7YzjSaLMsIHCXlGZM8OPdbHi_G7o4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fkhh1-2.fna&oh=03_Q7cD2QHFcJoDGm8Q2ZD1NJT7hdRE0VMC54xYjXOUQJmn4jiPdQ&oe=68423823" alt="飛機3">
+  </div>
+  <div class="card">
+    <h3>玫瑰花</h3>
+    <img src="file:///C:/Users/STUST/Desktop/159357/495072700_9790030701072969_4799836470441448840_n.jpg" alt="飛機4">
+  </div>
+</div>
+
+</body>
+</html>
