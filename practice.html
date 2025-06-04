@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>購物車練習</title>
+</head>
+<body>
+  <button onclick="alert('總金額：' + total + ' 元')">購物車總額</button>
+  <button onclick="clearCart()">清空購物車</button>
+
+  <div>
+    <img src="images.jpg" alt="noodle1" width="150">
+    <p>$100</p>
+    <button onclick="addToCart(100)">加入購物車</button>
+  </div>
+
+  <div>
+    <img src="images (1).jpg" alt="noodle2" width="150">
+    <p>$120</p>
+    <button onclick="addToCart(120)">加入購物車</button>
+  </div>
+
+  <script>
+    let total = 0;
+
+    function addToCart(price) {
+      total += price;
+      alert('已加入購物車，目前總額：' + total + ' 元');
+    }
+
+    function clearCart() {
+      total = 0;
+      alert('購物車已清空');
+    }
+  </script>
+</body>
+</html>
